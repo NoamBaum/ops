@@ -1,2 +1,38 @@
-#!/bin/bash
-#add fix to exercise5-server1 here
+echo 'StrictHostKeyChecking no' | sudo tee --append /etc/ssh/ssh_config > /dev/null
+
+echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQChXnY6H6MDiYrekeZa8oLQgoHN3tu/uIPwfL8yx5ZhRyGSZfek+6WKTMKemv1C8g3Fr39/0W9GxHGuL2sPKPOCuaAwCe0zGMV1qKVWzTB9k9VJRF4MNvTflPCTKXPyOaD+0lvfGuQCVv+Jc77FTd/Cll1sLweZ6m9aIgYn1mfH9Y0x0OCdcSSB1hDpFy5SYY5nudy4rK6TFhCnUfK+rpzFsfClj7ur7aeHjHslvgMyBFt6F4BxKwaAMGJdZyE3pj83+C2fPNl74XNNtDWM9n+Q/Uur6AVlcKdDzgrIlLodqutJFnpXV5m0pKOAKUa69v4lsyijSmRJO2C+fnw8LZ2X vagrant@server1' | sudo tee --append /home/vagrant/.ssh/id_rsa.pub > /dev/null
+
+echo '-----BEGIN RSA PRIVATE KEY-----
+MIIEpQIBAAKCAQEAoV52Oh+jA4mK3pHmWvKC0IKBzd7bv7iD8Hy/MseWYUchkmX3
+pPulikzCnpr9QvINxa9/f9FvRsRxri9rDyjzgrmgMAntMxjFdailVs0wfZPVSURe
+DDb035Twkylz8jmg/tJb3xrkAlb/iXO+xU3fwpZdbC8HmepvWiIGJ9Znx/WNMdDg
+nXEkgdYQ6RcuUmGOZ7ncuKyukxYQp1Hyvq6cxbHwpY+7q+2nh4x7Jb4DMgRbeheA
+cSsGgDBiXWchN6Y/N/gtnzzZe+FzTbQ1jPZ/kP1Lq+gFZXCnQ84KyJS6HarrSRZ6
+V1eZtKSjgClGuvb+JbMoo0pkSTtgvn58PC2dlwIDAQABAoIBAQCcX4GKCaZagyrD
+S/dCIseJby6CZXflbdTNctWFS8v6MIfj6lP02LcuMfxW3jKWcSHPc6XGIxoGJc9T
+0Dea1UBEacVFSBlH7rVKs0aluulGh7+j5FCO3aKmFxqaQQ1OqXHN/eNxbAmQCuZO
+OI+hezlew398moZvLLMDUP1OFYM0TMFBhRAUev2QfYyPrL9J11fjcd2KB82Lu3ML
+akhxgiDRa1lrWDjKmo/gaQq5cs/kFAVPybJkm8eIgti1iyA5Lz2ahvR4nmjPohaU
+aFM6s40NVNd1n6ni8wwK6LQzEd9nCjL199bbgsOWGam1MZYr79a0Z3yrlO+ffNL6
+vE1F4PCBAoGBANWkENVLq83/oIJlWhZvq0QMIaHN0lDH9OuBw27KmQd+V9IkZ9wz
+37S2WfEtLEE1pv87E/n8GKON2RDC3IuvMtEbwno7kCHgyx/Qiz+qsQ8SjP9XxXdg
+EgKaC2JH8upTsCRbjzxWxE80QFWgcJAWawc0vV1OXMQT+lK2kuYASh8HAoGBAMFd
+MQzxFEnm28Y3yiApsfp37vkZjwVW3yu619DE0IwOwZt8jcaYLQ7Hvr1+OxHqrVRc
+wBYIJVDB9arMwIL5HHI/Nm4rwuXjsqORB3TU6M7tp3BbEmJpSTwTRcQCxrm+basU
+w0CRji7xNMFj+RlU0mIl/8VJ/V2x7Dd8xgB7ZFjxAoGBAIpA6S/PD3h447tesWTx
+kQixPRaDpoXmUIYTbJCHBW8HAPgZ3ShwXWWJ2Dyt+gSdHtvutGfDD4LQKdeh8q1m
+jGEsMLd/Ui/KVEjbYTGrWXeijqIzf7NX9W+/lnxciUPBMqzkn5XxpIqJCtUexZlJ
+GKwKIj1+l6PANe9O/VNgfpcDAoGAfIqshBxmp+7EkRfv3OVeF+fViKW4o4S/eyf9
+xx5tADik5KPFoSr0ondu2BgMrc6MUzDmG4qlli1HMPpt6C3Q75jdUvpmrrEIpydL
+OSnExTr2xHw0DCSqIcJ8BfKP0qTfd/iIhfb6MCv1gbYFhBZI5yR4Z7bvNMDbVyXL
+VhYjnNECgYEA1Aj+tShR9BwFrpXxvkuWkTtVhOXMZFNeM7WuEs9OJT0uI6EOJh2o
+XYySPeCRiuMrwFia3/g8L3Q8vinm4GSJuSe3Zq626aIIfIF+rEenfm44VfGNkUk9
+oiMaMcn60ASLypkw9DOYMCMr/82boNIhSgR87CwOjpvY+CNn+a4gIvY=
+-----END RSA PRIVATE KEY-----
+' | sudo tee --append /home/vagrant/.ssh/id_rsa > /dev/null
+
+echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQChXnY6H6MDiYrekeZa8oLQgoHN3tu/uIPwfL8yx5ZhRyGSZfek+6WKTMKemv1C8g3Fr39/0W9GxHGuL2sPKPOCuaAwCe0zGMV1qKVWzTB9k9VJRF4MNvTflPCTKXPyOaD+0lvfGuQCVv+Jc77FTd/Cll1sLweZ6m9aIgYn1mfH9Y0x0OCdcSSB1hDpFy5SYY5nudy4rK6TFhCnUfK+rpzFsfClj7ur7aeHjHslvgMyBFt6F4BxKwaAMGJdZyE3pj83+C2fPNl74XNNtDWM9n+Q/Uur6AVlcKdDzgrIlLodqutJFnpXV5m0pKOAKUa69v4lsyijSmRJO2C+fnw8LZ2X vagrant@server1' | sudo tee --append /home/vagrant/.ssh/authorized_keys >> /dev/null
+
+sudo chmod 600 /home/vagrant/.ssh/id_rsa
+
+sudo chown vagrant:vagrant /home/vagrant/.ssh/id_rsa
